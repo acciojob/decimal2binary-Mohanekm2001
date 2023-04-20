@@ -1,10 +1,13 @@
-function decimalToBinary() {
-  // Get the decimal number input value
-  const decimal = document.getElementById('decimal').value;
-
-  // Convert decimal to binary
-  const binary = parseInt(decimal, 10).toString(2);
-
-  // Update the result element
-  document.getElementById('result').innerHTML = binary;
+function threeSum(dec) {
+// write your code here
+	let bin = '';
+    while(dec>0){
+        let rem = dec%2;
+        bin = rem + bin;
+        dec = Math.floor(dec/2);
+    }
+    return bin;
+  
 }
+
+module.exports = threeSum;
